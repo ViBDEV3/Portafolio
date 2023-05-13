@@ -1,7 +1,5 @@
 var botonEncriptar = document.querySelector(".btn-encriptar");
 var botonDesencriptar = document.querySelector(".btn-desencriptar");
-var imagen = document.querySelector(".contenedorimagen");
-var contenedor = document.querySelector(".contendedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
 
 botonEncriptar.onclick = encriptar;
