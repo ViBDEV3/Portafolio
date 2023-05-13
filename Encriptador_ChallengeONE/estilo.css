@@ -132,8 +132,12 @@ main {
 }
 
 .contenedor-resultado p {
+    position: absolute;
     color: #495057;
     font-size: 25px;
+    width: 336px;
+    height: 359px;
+    top: 150px;
 }
 
 .contenedor-copiar {
@@ -156,4 +160,8 @@ main {
     border: 1px solid #0a3871;
     cursor: pointer;
     position: relative;
+}
+
+.ocultar {
+    display: none;
 }
