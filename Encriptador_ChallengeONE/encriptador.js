@@ -6,11 +6,13 @@ botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 
 function encriptar(){
+    ocultar();
     var cajatexto = recuperarTexto()
     resultado.textContent = encriptarTexto(cajatexto);
 }
 
 function desencriptar(){
+    ocultar();
     var cajatexto = recuperarTexto()
     resultado.textContent = desencriptarTexto(cajatexto);
 }
@@ -18,6 +20,11 @@ function desencriptar(){
 function recuperarTexto(){
     var cajatexto = document.querySelector(".cajatexto")
     return cajatexto.value
+}
+
+function ocultar(){
+    document.getElementById("contenedorimagen").style.display = "none";
+    document.getElementById("contenedor-parrafo").style.display = "none";
 }
 
 function encriptarTexto(mensaje){
